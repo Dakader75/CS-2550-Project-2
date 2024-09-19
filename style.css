@@ -1,0 +1,160 @@
+#floatDiv {
+    background-color: whitesmoke;
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+    align-self: center;
+    box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    margin-bottom: 12px;
+    background-image: url("about_me_background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    margin-top: 8px;
+    margin-bottom: 4px; 
+}
+
+img {
+    float: right;
+    box-shadow: 3px 3px 2px #333333;
+}
+
+
+
+table {
+    box-shadow: 2px 2px 1px #333333;
+}
+
+table, th, tr, td {
+    border: 1px solid black;
+    text-align:left;
+    vertical-align:text-top;
+    table-layout: fixed;
+    width: 100px;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+tr:nth-child(odd) {
+    background-color: #DDDDDD;
+}
+
+.ScheduleHeader {
+    background-color: #888888;
+}
+
+.CS2370 {
+    background-color:slateblue;
+}
+
+.Work {
+    background-color:turquoise;
+}
+
+.CS3410 {
+    background-color:orange;
+}
+
+.CS3320 {
+    background-color:tomato;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* Credit goes to https://www.w3schools.com/howto/howto_css_modal_images.asp for picture popout */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+/*  End of credit */
